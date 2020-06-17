@@ -3,11 +3,11 @@ from datetime import datetime, timedelta
 import random
 
 
-start_date = datetime(2020, 1, 11)
+start_date = datetime(2020, 6, 17)
 end_date = datetime(2023, 3, 5)
 incDay = timedelta(days=1)
 while (start_date <= end_date):
-    coQuantity = random.randint(1, 40)
+    coQuantity = random.randint(1, 17)
     for i in range(coQuantity):
         os.system(f"touch ./files/C{start_date.strftime('%Y-%m-%d')}{random.randint(1, 12000)}")
         os.system(f"git add .")
